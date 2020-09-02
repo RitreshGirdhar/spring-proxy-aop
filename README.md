@@ -9,6 +9,10 @@ Pre-requisite
 
 
 ## How to run it
+```
+cd microservice1
+docker build -t ms1 .
+```
 
 
 ## Proxy Pattern - AOP 
