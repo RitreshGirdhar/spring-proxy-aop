@@ -6,14 +6,15 @@ Pre-requisite
 * Knowledge of Spring Boot, Boot Starter concept + AOP
 
 ## Build Application
-
+```
+cd spring-proxy-aop
+docker build -t spring-proxy-demo .
+```
 
 ## How to run it
 ```
-cd microservice1
-docker build -t ms1 .
+docker run -p8080:8080 spring-proxy-demo -d
 ```
-
 
 ## Proxy Pattern - AOP 
 
