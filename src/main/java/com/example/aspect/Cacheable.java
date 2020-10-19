@@ -7,6 +7,9 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface EligibleToRun {
+public @interface Cacheable {
 
+	String name() default  "";
+	int ttl() default 3600;
+	String record();
 }
