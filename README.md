@@ -6,16 +6,20 @@ Pre-requisite
 * Knowledge of Spring Boot, Boot Starter concept + AOP
 
 ## Build Application
-
+```
+cd spring-proxy-aop
+docker build -t spring-proxy-demo .
+```
 
 ## How to run it
 ```
-cd microservice1
-docker build -t ms1 .
+docker run -p8080:8080 spring-proxy-demo -d
 ```
 
+## Proxy Pattern
 
-## Proxy Pattern - AOP 
+As described here https://refactoring.guru/design-patterns/proxy "Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object"
 
+Here we are using proxy pattern for getting cached result rather than receiving the original value. In real world application we require to save the hits on the resource that we could do by adding proxy layer of caching. There are various caching framework and libraries here we are using spring cache.
 
 Happy reading !!!!
