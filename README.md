@@ -1,5 +1,4 @@
 # Spring Boot Aop Demo - Proxy Pattern implementation
-
 Created this application for a friend who was looking for some way to introduce caching layer as a proxy in his application. He had multiple caching source and he wanted to abstract that logic from the existing application
 
 #### Pre-requisite
