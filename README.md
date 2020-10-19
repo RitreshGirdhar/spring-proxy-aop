@@ -20,7 +20,7 @@ docker run -p8080:8080 spring-proxy-demo -d
 
 As described here https://refactoring.guru/design-patterns/proxy .
 
-**Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object**
+**__Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object__**
 
 Here we are using proxy pattern for getting cached result rather than receiving the original value. In real world application we require to save the hits on the resource that we could do by adding proxy layer of caching. There are various caching framework and libraries here we are using spring cache.
 
